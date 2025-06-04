@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5c6bc0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f51b5;
+}
+
+#deleteAllBtn {
+  background-color: #e53935;
+}
+
+#deleteAllBtn:hover {
+  background-color: #c62828;
+}
+
+#gifContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#gifContainer div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+}
