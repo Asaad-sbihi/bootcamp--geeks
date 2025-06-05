@@ -1,0 +1,89 @@
+/* Import Star Wars-like font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #0c0c0c 0%, #000000 100%);
+  color: #feda4a;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #1a1a1a;
+  border: 2px solid #feda4a;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 30px rgba(254, 218, 74, 0.3);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #feda4a;
+}
+
+button {
+  background-color: #feda4a;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #ffe95a;
+  transform: scale(1.05);
+}
+
+#loading, #error {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+#loading i {
+  color: #feda4a;
+  margin-right: 8px;
+}
+
+#error {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+#character {
+  margin-top: 20px;
+  background: #262626;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #feda4a;
+  box-shadow: 0 0 10px rgba(254, 218, 74, 0.2);
+}
+
+#character h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+#character p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
