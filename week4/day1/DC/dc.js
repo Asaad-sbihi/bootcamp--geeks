@@ -1,52 +1,43 @@
-const gameInfo = [
- {
-   username: "john",
-   team: "red",
-   score: 5,
-   items: ["ball", "book", "pen"]
- },
- {
-   username: "becky",
-   team: "blue",
-   score: 10,
-   items: ["tape", "backpack", "pen"]
- },
- {
-   username: "susy",
-   team: "red",
-   score: 55,
-   items: ["ball", "eraser", "pen"]
- },
- {
-   username: "tyson",
-   team: "green",
-   score: 1,
-   items: ["book", "pen"]
- },
-];
+let client = "John";
 
-users = [];
+const groceries = {
+  fruits: ["pear", "apple", "banana"],
+  vegetables: ["tomatoes", "cucumber", "salad"],
+  totalPrice: "20$",
+  other: {
+    paid: true,
+    meansOfPayment: ["cash", "creditCard"]
+  }
+};
 
-gameInfo.forEach(usernames => {
-  users.push(`${usernames.username}!`)
-});
 
-console.log(users)
+const displayGroceries = () => {
+  groceries.fruits.forEach(fruit => console.log(fruit));
+};
 
-const winners = []; 
 
-gameInfo.forEach(player => {
-    if (player.score > 5) {
-        winners.push(player.username);
-    }
-});
+displayGroceries();
 
-console.log(winners)
 
-let totalScore = 0; 
+const cloneGroceries = () => {
+    let user = client;
 
-gameInfo.forEach(player => {
-    totalScore += player.score; 
-});
+    client = "betty";
 
-console.log(totalScore); 
+    console.log("user",user);
+    console.log("client",client);
+      // user is not affected because strings are primitive and copied by value
+
+    let shopping = groceries;
+
+    shopping.totalPrice = "35$";
+    shopping.other.paid = false;
+    // groceries is affected because objects are copied by reference
+
+
+};
+
+
+cloneGroceries();
+
+
