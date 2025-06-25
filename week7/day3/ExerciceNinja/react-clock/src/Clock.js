@@ -57,15 +57,14 @@ class Clock extends Component {
     return (
       <div className="container">
         <h1>{year} / <span>Year</span></h1>
-       <div className="clock">
+        <div className="clock">
   {this.renderCircle("month", 12, date.getMonth() + 1, 80)}
   {this.renderCircle("week", 5, week, 120)}
   {this.renderCircle("day", 31, day, 160)}
   {this.renderCircle("hr", 24, hour, 200)}
   {this.renderCircle("min", 60, minute, 240)}
-  {this.renderCircle("sec", 60, second,  280)}
+  {this.renderCircle("sec", 60, second, 280)}
 </div>
-
         <div className="center">
           <h2>
             {month} month - week {week} - {day} day - {hour} hr - {minute} min - {second} sec
